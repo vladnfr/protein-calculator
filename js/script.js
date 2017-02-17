@@ -12,11 +12,7 @@ $(document).ready(function() {
 	$("#calculator-header").click(function() {
 		$("#calculator").slideToggle(500);
 	});
-
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		document.getElementById('showcase').style =  "background-color: black;";
-	} 
-
+	
 	var result = 0;
 	$("#result").text("Your protein intake is " + result + " grams.");
 	$("#result").click(function() {
